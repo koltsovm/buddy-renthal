@@ -1,0 +1,55 @@
+# Git ignore file for vehicles-rental project
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+*.data
+*.db
+*.sqlite
+
+# Coverage directories
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Distribution/artifacts
+*.bundle.*
+*.zip
+*.tar.gz
+*.rar
+
+# Service worker cache
+offline.html
+
+# Test artifacts
+test-results/
+
+# Temporary upload directories
+uploads/
