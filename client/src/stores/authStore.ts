@@ -1,20 +1,19 @@
-// TODO: Implement Zustand stores for UI state
-import { useState } from 'react';
+import { create } from "zustand";
 
-export const useAuthStore = () => {
-  const [user, setUser] = useState<any>(null);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+interface AuthStore {
+  user: any;
+  isAuthenticated: boolean;
+  login: (userData: any) => void;
+  logout: () => void;
+}
 
-  return {
-    user,
-    isAuthenticated,
-    login: (userData: any) => {
-      setUser(userData);
-      setIsAuthenticated(true);
-    },
-    logout: () => {
-      setUser(null);
-      setIsAuthenticated(false);
-    }
-  };
-};
+export const useAuthStore = create<AuthStore>((set) => ({
+  user: null,
+  isAuthenticated: false,
+  login: (userData: any) => {
+    set({ user: userData, isAuthenticated: true });
+  },
+  logout: () => {
+    set({ user: null, isAuthenticated: false });
+  },
+}));

@@ -8,7 +8,9 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
     "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -22,7 +24,8 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitOverride": true
+    "noImplicitOverride": true,
+    "jsx": "react-jsx"
   },
   "include": ["./src"],
   "exclude": ["node_modules", "../dist"]
