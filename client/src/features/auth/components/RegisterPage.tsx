@@ -124,7 +124,7 @@ export default function RegisterPage() {
               placeholder="Иван Иванов"
               value={formData.name}
               onChange={(e) => handleChange("name", e.target.value)}
-              className={`mt-1 block w-full rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
+              className={`mt-1 block w-full rounded-md px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
                 errors.name ? "border-red-500" : "border-gray-300"
               }`}
             />
@@ -144,7 +144,7 @@ export default function RegisterPage() {
               placeholder="ivan@example.com"
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
-              className={`mt-1 block w-full rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
+              className={`mt-1 block w-full rounded-md px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
                 errors.email ? "border-red-500" : "border-gray-300"
               }`}
             />
@@ -164,7 +164,7 @@ export default function RegisterPage() {
               placeholder="••••••••••••••••"
               value={formData.password}
               onChange={(e) => handleChange("password", e.target.value)}
-              className={`mt-1 block w-full rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
+              className={`mt-1 block w-full rounded-md px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
                 errors.password ? "border-red-500" : "border-gray-300"
               }`}
             />
@@ -187,7 +187,7 @@ export default function RegisterPage() {
               placeholder="••••••••••••••••"
               value={formData.confirmPassword}
               onChange={(e) => handleChange("confirmPassword", e.target.value)}
-              className={`mt-1 block w-full rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
+              className={`mt-1 block w-full rounded-md px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${
                 errors.confirmPassword ? "border-red-500" : "border-gray-300"
               }`}
             />
